@@ -1,0 +1,146 @@
+#header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 80px;
+   background: rgb(247 155 74);
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+   z-index: 999;
+   top: 0;
+   left: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 70px;
+}
+
+#navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#navbar li {
+   list-style: none;
+   padding: 0px 20px;
+   position: relative;
+}
+
+#navbar li a {
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 600;
+   color: #1a1a1a;
+   transition: 0.3s ease;
+}
+
+#mobile {
+   display: none;
+   align-items: center;
+}
+
+#close {
+   display: none;
+}
+
+@media (max-width:799px) {
+   .section-p1 {
+      padding: 40px 40px;
+   }
+
+   #navbar {
+
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      height: 100vh;
+      width: 300px;
+      background-color: rgb(247 155 74);
+      box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.1);
+      padding: 80px 0 0 10px;
+      transition: 0.3s;
+   }
+
+
+   #navbar.active {
+      right: 0px;
+   }
+
+   #navbar li {
+      margin-bottom: 25px;
+   }
+
+   #mobile {
+      display: flex;
+      align-items: center;
+   }
+
+   #mobile i {
+      color: #1a1a1a;
+      font-size: 24px;
+      padding-left: 20px;
+   }
+
+   #close {
+      /* display: initial; */
+      /* position: absolute; */
+      /* top: 30px;
+      left: 30px; */
+      /* color: hsl(0, 100%, 50%); */
+      font-size: 24px;
+      display: block;
+   }
+
+   .explore-content {
+      margin-top: 54%;
+     margin-left: -8%;
+     position: fixed;
+   }
+}
+
+@media(max-width:477px) {
+   #header {
+      padding: 10px 30px;
+   }
+   .explore-content {
+      margin-top: 95%;
+     margin-left: -20%;
+     position: fixed;
+   }
+
+/* Ensure the container does not cause overflow */
+/* Ensure the container does not cause overflow */
+.reveal-left, .reveal-right, .reveal-bottom {
+   width: 100%;
+   overflow-x: hidden;
+}
+
+
+}
+
+.logo1 {
+   width: 50%;
+}
+
+
+.explore-content {
+   position: absolute;
+   top: 70px;
+   left: 90%;
+   transform: translateX(-50%);
+   width: 170px;
+   background-color: #f9f9f9;
+   padding: 20px;
+   border: 1px solid #ccc;
+   z-index: 1000;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.explore-content h2 {
+   padding: 2%;
+}
